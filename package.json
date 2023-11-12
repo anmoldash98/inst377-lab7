@@ -4,7 +4,6 @@
   "description": "This showcases db connectivity using Express",
   "main": "app.js",
   "scripts": {
-    "start": "nodemon -e '*'",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Anmol Dash",
