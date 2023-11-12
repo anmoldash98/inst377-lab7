@@ -1,5 +1,5 @@
 async function loadCustomerData() {
-    var host = window.location.host; 
+    var host = window.location.origin; 
     console.log('Host:', host)
     var test = await fetch(`https://inst377-lab7.vercel.app/customers`)
         .then((res) => res.json())
