@@ -1,7 +1,7 @@
 async function loadCustomerData() {
     var host = window.location.origin; 
     console.log('Host:', host)
-    var test = await fetch(`https://inst377-lab7.vercel.app/customers`)
+    var test = await fetch(`https://${host}/customers`)
         .then((res) => res.json())
         .then((res) => {
             console.log(res)
@@ -51,9 +51,9 @@ async function loadCustomerData() {
 
 async function createCustomer() {
     console.log('Creating Customer')
-    var host = window.location.host; 
+    var host = window.location.origin; 
     console.log('Host:', host)
-    var test = await fetch(`https://inst377-lab7.vercel.app/customer`, {
+    var test = await fetch(`https://${host}/customer`, {
         method: 'POST',
         body: JSON.stringify({
             "firstName": `${document.getElementById("firstName").value}`,
